@@ -23,4 +23,7 @@ func main() {
 	fmt.Println(addOmmitType(4, 5))
 	fmt.Println(multipleResults("Hello", "Stivenson"))
 
+	x, y := multipleResults("Hello", "Stivenson")
+	fmt.Println(y, x)
+
 }
