@@ -21,10 +21,10 @@ func returnVariables(a, b string) (x, y int) {
 	x = 5
 	y = 3
 	if a == "a" {
-		x = y + 2
+		x = y + 10
 	}
 
-	if b == "c " {
+	if b == "c" {
 		y = y + x
 	}
 
@@ -38,6 +38,7 @@ func main() {
 	fmt.Println(multipleResults("Hello", "Stivenson")) // Called functions with multiple results
 
 	x, y := multipleResults("Hello", "Stivenson") // Called functions for get two results in different variables
-	fmt.Println(y, x)                             // Two result printing
-	returnVariables("a", "b")                     // Called to function with return variables
+	fmt.Println(y, x)
+	x2, y2 := returnVariables("a", "b") // Two result printing
+	fmt.Println(x2, y2)                 // Called to function with return variables
 }
