@@ -17,6 +17,20 @@ func multipleResults(x, y string) (string, string) {
 	return x, y
 }
 
+func returnVariables(a, b string) (x, y int) {
+	x = 5
+	y = 3
+	if a == "a" {
+		x = y + 2
+	}
+
+	if b == "c " {
+		y = y + x
+	}
+
+	return
+}
+
 func main() {
 	fmt.Println(math.Pi)                               // Called of Identifier of package
 	fmt.Println(add(2, 3))                             // Called functions with basic declaration of parameters
@@ -25,5 +39,5 @@ func main() {
 
 	x, y := multipleResults("Hello", "Stivenson") // Called functions for get two results in different variables
 	fmt.Println(y, x)                             // Two result printing
-
+	returnVariables("a", "b")                     // Called to function with return variables
 }
