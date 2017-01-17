@@ -6,12 +6,14 @@ import (
 )
 
 var (
-	ToBe   bool       = false
-	MaxInt uint64     = 1<<64 - 1
-	z      complex128 = cmplx.Sqrt(-5 + 12i) // imaginary part
-	sqrt              = cmplx.Sqrt(2)        // is return and initialized
-	f32    float32    = 0.04
-	f64    float64    = 0.04
+	ToBe     bool       = false
+	MaxInt   uint64     = 1<<64 - 1
+	z        complex128 = cmplx.Sqrt(-5 + 12i) // imaginary part
+	sqrt                = cmplx.Sqrt(2)        // is return and initialized
+	f32      float32    = 0.04
+	f64      float64    = 0.04
+	onlyint  int        = -33
+	onlyuint uint       = 33
 )
 
 func main() {
@@ -24,7 +26,10 @@ func main() {
 	fmt.Println(f32)
 	fmt.Println(f64)
 	fmt.Println(sqrt)
+	fmt.Println(onlyint)
+	fmt.Println(onlyuint)
 
+	// Book recommended, Chapter 3: http://www.golangbootcamp.com/book/types
 	/*
 	   uint8       the set of all unsigned  8-bit integers (0 to 255)
 	   uint16      the set of all unsigned 16-bit integers (0 to 65535)
